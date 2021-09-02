@@ -29,7 +29,7 @@
 
     function printLoginState(state: LoginState) {
         state.result// success or fail
-        // 썩 좋은 방법은 아님...!
+        
         if (state.result ==='success') { // response라는 key가 state안에 있다면(성공) 조건
             console.log(`🐱‍🏍 ${state.response}`);
         } else {
