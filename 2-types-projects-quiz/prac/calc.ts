@@ -27,5 +27,5 @@
             default:
                 throw Error('unknown commad');
         }
-    }
+    };
 }
