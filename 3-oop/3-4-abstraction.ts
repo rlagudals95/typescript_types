@@ -86,4 +86,5 @@
   const amateur = new AmateurUser(maker);
   const pro = new ProBarista(maker);
   pro.makeCoffee();
+  amateur.makeCoffee();
 }
