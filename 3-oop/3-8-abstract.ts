@@ -1,4 +1,10 @@
 {
+
+  // abstract class는 자체적으로 object 생성불가 추상적인 클래스
+  // 공통적인 기능 개발, 구현하는 클래스마다 달라져야하는 기능이 있다면
+  // 그 기능만 abstract class로 구현 가능
+  // 구현하는 클래스 마다 달라지는 함수만 abstract로 선언 
+
   type CoffeeCup = {
     shots: number;
     hasMilk?: boolean;
