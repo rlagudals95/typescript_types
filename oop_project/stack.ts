@@ -58,7 +58,7 @@
     stack.push('mac');
     stack.push('os');
     stack.push('linux');
-
+    
     while (stack.size !== 0) {
         console.log(stack.pop())
     }

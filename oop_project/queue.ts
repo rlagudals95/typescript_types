@@ -22,7 +22,9 @@
             this._capacity = capacity
         }
         shift(): void {
-            throw new Error("Method not implemented.");
+            const node = this.foot;
+            this.foot = node?.before;
+            this._size--;
         }
 
         get size() {
@@ -41,5 +43,13 @@
 
     }
 
+    const queue = new QueueImpl(3);
+    queue.push('h');
+    queue.push('m');
+    queue.push('k');
 
+    console.log(queue.shift());
+    console.log(queue.shift());
+    console.log(queue.shift());
+    
 }
