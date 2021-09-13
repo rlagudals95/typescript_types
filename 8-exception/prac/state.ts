@@ -7,9 +7,18 @@
         
     }
 
+    type SuccessState = {
+        result: 'success';
+    }
+
+    type NetworkErrorState = {
+        result: 'fail';
+        reason: 'offline' | 'down' | 'timeout';
+    }
+    type ResultState = SuccessState | NetworkErrorState;
 
     class NetworkClient {
-        tryConnect(): void {
+        tryConnect(): ResultState {
             throw new offlineError ('no network')
         }
     };

@@ -6,7 +6,7 @@
   };
 
   interface CoffeeMaker {
-    makeCoffee(shots: number): CoffeeCup;
+    makeCoffee(shots: number): CoffeeCup; 
   }
 
   class CoffeeMachine implements CoffeeMaker {
